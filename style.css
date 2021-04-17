@@ -1,0 +1,39 @@
+body{
+  background-color: #000;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+#handle_left{
+  display: inline-block;
+  position: absolute;
+  left : 10%;
+  background-color: #fff;
+  color : #fff;
+  width : 2%;
+  height: 20%;
+}
+
+#handle_right{
+  display: inline-block;
+  position: absolute;
+  right : 10%;
+  background-color: #fff;
+  color : #fff;
+  width : 2%;
+  height: 20%;
+}
+
+#ball{
+  display: inline-block;
+  position: absolute;
+  font-size: 2.5rem;
+  left: 50%;
+  animation: 1s rotate360 infinite linear;
+    /* background-color: #fff; */
+  /* color : #fff; */
+  /* border-radius: 100%; */
+}
+
+@keyframes rotate360 {
+to { transform: rotate(360deg); }
+}
